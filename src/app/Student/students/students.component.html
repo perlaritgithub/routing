@@ -1,0 +1,21 @@
+<!-- <p>students works!</p>
+<app-add-student (studentCreated)="createStudent($event)"></app-add-student>
+<div *ngIf="student-details.length > 0 ; else noStudents;">
+<app-student-details *ngFor="let students of student-details" [students]="students"></app-student-details>
+</div>
+
+<ng-template #noStudents>
+    <p> no students</p>
+</ng-template> -->
+
+
+<app-add-student (studentCreated)="addStudent($event)"></app-add-student>
+<div *ngIf="students.length > 0 ; else noStudents;">
+    <app-student *ngFor="let student of students" [name]="student.name" [branch]="student.branch" [id]="student.id" ></app-student>
+</div>
+<ng-template #noStudents>
+    <p> no students</p>
+</ng-template>
+
+
+

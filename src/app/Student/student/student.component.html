@@ -1,0 +1,14 @@
+
+<!-- <p>Student Name: {{ name }}<a href="/student/1">view details</a> </p>
+<p>Student Branch: {{ branch }}<a href="/student/1">view details</a></p>
+<p>Stident Id: {{ id }}<a href="/student/1">view details</a></p> -->
+<!-- <p>Student Name: {{ name }}<a routerLink="/student/1">view details</a> </p>
+<p>Student Branch: {{ branch }}<a routerLink ="/student/1">view details</a></p>
+<p>Stident Id: {{ id }}<a routerLink="/student/1">view details</a></p> -->
+<!-- <p>Student Name: {{ name }}<a [routerLink]="['/student', id]">view details</a> </p>
+<p>Student Branch: {{ branch }}<a [routerLink]="['/student', id]">view details</a></p>
+<p>Stident Id: {{ id }}<a [routerLink]="['/student', id]">view details</a></p>
+ -->
+ <p>Student Name: {{ name }}<a [routerLink]="['/student', id]" [queryParams]="{name:name,branch:branch,id:id}">view details</a> </p>
+<p>Student Branch: {{ branch }}<a [routerLink]="['/student', id]" [queryParams]="{name:name,branch:branch,id:id}">view details</a></p>
+<p>Stident Id: {{ id }}<a [routerLink]="['/student', id]" [queryParams]="{name:name,branch:branch,id:id}">view details</a>
